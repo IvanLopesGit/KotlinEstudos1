@@ -4,7 +4,9 @@ import one.digitalinnovation.digitalbank.Gerente
 
 fun main() {
 
-    val pedro = Gerente("Pedro", "123.456.789.00", 4000.00)
+    val pedro = Gerente("Pedro", "123.456.789.00", 4000.00, "senha1234")
 
     imprimeRelatorio(pedro)
+
+    TesteAutenticacao().autentica(pedro)
 }
